@@ -1,4 +1,15 @@
 #!/bin/bash
-# This is a simple shell script
+# This script creates a text file, writes content to it, and prints the content.
 
-echo "Hello, World!"
+# Specify the file name
+FILE="example.txt"
+
+# Create and write content to the file
+echo "This is a sample text file." > $FILE
+
+# Append some more content to the file
+echo "Adding more text to the file." >> $FILE
+
+# Print the content of the file
+echo "Content of the file:"
+cat $FILE
